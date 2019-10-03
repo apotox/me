@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- node
+cache:
+  directories:
+  - node_modules
+script:
+- yarn install
+- yarn test
+- yarn build
+deploy:
+  provider: firebase
+  skip-cleanup: true
+  token:
+    secure: "egRWfjr8Yh4pgMR+e9QYbjgTpmUttG5j5Z7pY0Jn6j07aA0gFrrxdc5cKCRCF+z0WK+/NOHSYSTBdjd+3digA8dtOYJV/ywUwc+vcfTtzD/E08jN6hTRmbM55x0m38nS5P4uWBYhgr2UWhCvsbNWv9Ogl0b+Tb/emvMeBPd4RseHN81ciXAoNy4NpdL3+DHwoo8x+OksvnjydysmcnGOjEiRz4QvlP43E1gPgMhmaOYOhIkHUAfBfUGE4ABWl8uT3o82sM68rA98G9SzIRsKUqwI6MKTD7N2r+Cnjm/dseLuGL8TwOyUjb9liv5QeLyX7ZpdHUBN/s1PtXa8GqJi+kcIuLOD1s6+qKxFDI3vhdASgU6lHn6KIXq+D7E3ydYZ9Dq3czt8ftrOOpbuGlgZmyuyYqGWIV4675xvB/FU/j5fLEJFxXAIcRgFsPaqYPIk2zI4DBHr5pT/qTNnEDr8DmuZi2S6z0p6h7TiKXBqQ9BEEkXMjkiB7ufr6H0ukJh/0Zu1/pOLWMo8K6LH2o4iNKsRb2gncLbssDeLZ9+vzHGM9SUBjyITy9KHXfD4tAU/Fvfc7UfGfjz6fWk5kRgMz63eawr7xJUgs3nZCM/wO32QHepIzCMibo7B9NeGqoXp+ZZSpwy0qIb6Z7bgqXpXLl4NvtV47DnMO+nt8hrsT8Q="
+  message: "hi"
