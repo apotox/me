@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.profile{
+  background: #09d3ac url('./bg.jpg') center center;
+  background-size: cover;
+  margin: 12px;
+  border-radius: 12px;
+  background-color: #4c4c4c;
+  min-height: 480px;
+  display: flex;
+  flex-direction: row;
+  max-width: 840px;
+  
+
+  flex-wrap: wrap-reverse;
+
+}
+
+.profile .profile-details{
+  border-radius: 12px 0 0 12px;
+  background-color: #00917479;
+  max-width: 480px;
+  padding: 8px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  min-width: 280px;
+  flex-grow: 1;
+
+  margin: 0 auto;
+ 
+}
+
+.profile:hover .profile-details{
+  background-color: #00449179;
+}
+
+.profile:hover .img-container img{
+  opacity: 0.95;
+}
+
+.profile .profile-pic{
+  
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  flex-grow: 1;
+ 
+}
+
+.profile .profile-pic .img-container{
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;;
+  overflow: hidden;
+}
+
+.img-container img{
+  max-width: 120px;
+  opacity: 0.8;
+}
+
+
+
+.profile .profile-details p{
+  font-size: 14px;
+  
+  text-align: center;
+}
+
+.profile .profile-details p span{
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2px;
+}
+
+.profile .profile-details p:hover span{
+  background-color: rgba(12, 10, 10, 0.466);
+}
+
+.profile .profile-details p ,.profile .profile-details h3{
+  margin: 0;
+  line-height: 4px;
+  animation: down 1.2s forwards;
+}
+
+.btn{
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #09d3ac;
+  color:#fff;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.more{
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.twitter{
+  color: #fff;
+  padding: 4px;
+  margin: 2px;
+  background-color: rgba(255, 255, 255, 0.205);
+}
+.twitter:hover{
+  background-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.example{
+  color: #fff;
+  padding: 4px;
+  margin: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.example:hover{
+  
+  background-color: rgba(255, 255, 255, 0.48) !important;
+}
+
+
+.btn:hover{
+  background-color: #0b9176;
+  animation: up 0.6s forwards;
+}
+
+
+@keyframes down {
+    0%{
+      margin-top: 0;
+      line-height: 4px;
+    }
+    100%{
+      margin-top: 20px;
+      line-height: 14px;
+    }
+}
+
+@keyframes up{
+  0%{
+    
+    margin-bottom: 0;
+  }
+  100%{
+    margin-bottom: 5px;
+  }
+}
+
+
+
+
+.App-link {
+  color: #09d3ac;
+}
