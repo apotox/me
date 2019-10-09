@@ -1,22 +1,36 @@
 
 import React from 'react'
 import logo from './profile.jpg';
-
-export const Profile = ({ stack,title }) => {
+import bg from './bg.jpg'
+import Art from './svg-components/Art'
+export const Profile = ({ stack, title, description }) => {
 
 
 
     return <div className="profile">
 
+        <div className="profile-bg">
+
+            <img src={bg} />
+
+
+
+        </div>
+
         <div className="profile-details">
 
+
+
             <div>
+                <div className="art-container"><Art data={{ me: "Saphy" }} /></div>
                 <h3>{title}</h3>
-                <p>my name is <b>Safi</b> ,i'm a web applications developer with more than 3 years of full-stack developer experience</p>
+                <div dangerouslySetInnerHTML={{
+                    __html: description
+                }} className="white-bg" />
                 <p><span>📌</span>
-                {
-                    stack.map((tech,index)=><span key={index}>{tech}</span>)
-                }</p>
+                    {
+                        stack.map((tech, index) => <span key={index}>{tech}</span>)
+                    }</p>
                 <a href="https://github.com/apotox" className="btn"> Github </a>
             </div>
 

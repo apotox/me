@@ -16,9 +16,24 @@
   color: white;
 }
 
+.profile-bg{
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
 
+}
+
+.profile-bg img{
+  width: inherit;
+  height: inherit;
+}
 .profile{
-  background: #09d3ac url('./bg.jpg') center center;
+  position: relative;
   background-size: cover;
   margin: 12px;
   border-radius: 12px;
@@ -34,8 +49,9 @@
 }
 
 .profile .profile-details{
+  z-index: 2;
   border-radius: 12px 0 0 12px;
-  background-color: #00917479;
+  /* background-color: #00449111; */
   max-width: 480px;
   padding: 8px;
   justify-content: center;
@@ -49,16 +65,13 @@
  
 }
 
-.profile:hover .profile-details{
-  background-color: #00449179;
-}
-
 .profile:hover .img-container img{
-  opacity: 0.95;
+  opacity: 0.99;
 }
 
 .profile .profile-pic{
-  
+  padding: 8px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
    justify-content: center;
@@ -136,7 +149,7 @@
   color: #fff;
   padding: 4px;
   margin: 2px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color:rgba(225, 80, 52, 0.68)
 }
 .example:hover{
   
@@ -176,4 +189,46 @@
 
 .App-link {
   color: #09d3ac;
+}
+.white-bg{
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+.art-container{
+
+  opacity: 0.8;
+
+}
+
+#react-logo{
+  animation: move1 2.2s infinite;
+}
+
+
+#go{
+  animation: move2 2.2s infinite;
+}
+
+@keyframes move1{
+  0%{
+
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  50%{
+    transform: translate(10px, 15px) rotate(5deg);;
+    transform-origin: center center;
+  }
+}
+
+@keyframes move2{
+  0%{
+
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  50%{
+    transform: translate(10px, 15px) rotate(5deg);;
+    transform-origin: center center;
+  }
 }
