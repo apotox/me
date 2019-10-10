@@ -47,7 +47,8 @@ export const Profile = ({ stack, title, description }) => {
                 <a className="btn twitter" href="https://twitter.com/saphidev">@saphidev</a>
                 <a className="btn example" href="https://funcomponents.saphy.net">🚀 example 1</a>
                 <a className="btn example" href="https://project-2.saphy.net">🌠 example 2</a>
-            </div>
+           <a className="btn example" href="https://itqan-dz.com">🛸 Gatsbyjs</a>
+ </div>
 
         </div>
     </div>
