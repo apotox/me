@@ -4,9 +4,9 @@ import React from 'react';
 import './App.css';
 import { Profile } from './profile';
 
-const stack = ["Go","JS","AWS","API","ReactJs","Git","Svg"]
+const stack = ["Go","JS","AWS+Serverless","API","React","Git","Svg"]
 
-const desc = `<p>my name is <b>Safi</b> ,i'm a web applications developer with more than 3 years of full-stack developer experience</p>`
+const desc = `<p> <b>Safi</b> ,i'm a Software Engineer with more than 3 years of full-stack developer experience</p>`
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
       <Profile
        stack={stack}
-       title={"React Developer"} 
+       title={"React / Native"} 
        description={desc}
       />
 
